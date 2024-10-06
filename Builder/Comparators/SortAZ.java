@@ -1,7 +1,7 @@
 package Builder.Comparators;
 
-import Builder.Comparator;
 import Builder.File;
+import Builder.Tools.Comparator;
 
 public class SortAZ implements Comparator<File> {
     public int compare(File A, File B) {

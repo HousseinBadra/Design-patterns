@@ -4,6 +4,8 @@ import java.util.ArrayList;
 
 import Builder.Algos.BubbleSort;
 import Builder.Comparators.SortByDateCreated;
+import Builder.Tools.Algo;
+import Builder.Tools.Comparator;
 
 public class ProgramTest {
     public static void main(String args[]) {
@@ -16,7 +18,8 @@ public class ProgramTest {
 
         Comparator<File> C = new SortByDateCreated();
         Algo<File> algo = new BubbleSort<File>();
-        FileSorter.sortFile(arr, algo, C);
+        FileSorter fs = new FileSorter();
+        fs.sortFile(arr, algo, C);
 
         for (int i = 0; i < arr.size(); i++) {
             System.out.println(arr.get(i).getName());

@@ -1,7 +1,7 @@
 package Builder.Algos;
 
-import Builder.Algo;
-import Builder.Comparator;
+import Builder.Tools.Algo;
+import Builder.Tools.Comparator;
 
 import java.util.ArrayList;
 

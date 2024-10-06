@@ -1,9 +1,6 @@
 package Builder;
 
-import java.util.ArrayList;
+import Builder.Tools.Sorter;
 
-public class FileSorter {
-    public static void sortFile(ArrayList<File> arr, Algo<File> algorithm, Comparator<File> C) {
-        algorithm.sort(arr, C);
-    }
+public class FileSorter extends Sorter<File> {
 }
