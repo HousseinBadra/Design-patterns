@@ -19,7 +19,7 @@ public class ProgramTest {
         Comparator<File> C = new SortByDateCreated();
         Algo<File> algo = new BubbleSort<File>();
         FileSorter fs = new FileSorter();
-        fs.sortFile(arr, algo, C);
+        fs.sort(arr, algo, C);
 
         for (int i = 0; i < arr.size(); i++) {
             System.out.println(arr.get(i).getName());
